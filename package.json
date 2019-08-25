@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "rimraf dist && webpack --watch",
-    "start": "webpack-dev-server  --open --color ",
+    "start": "node server/server.js",
     "build": "rimraf dist &&  webpack --progress --profile",
     "server": "nodemon server/server.js",
     "server-prod": "node server/server.js"
@@ -19,7 +19,9 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "dotenv": "^8.1.0",
     "express": "^4.16.4",
+    "nodemailer": "^6.3.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-loadable": "^5.4.0",
